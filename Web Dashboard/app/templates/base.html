@@ -44,7 +44,6 @@
 				            dataType: 'json',
 				            success: function(response) {
 				                var json_array = response;
-				                //console.log(JSON.stringify(json_array, null, 4))
 				                $('#modal-commit').modal('toggle');
 				                $.each(response, function(index, element) {
 				                	var date = element[0].date;
@@ -112,7 +111,6 @@
 				            dataType: 'json',
 				            success: function(response) {
 				            	$('.events').empty();
-				            	//$('#table-events').css('display', 'none');
 				                $.each(response, function(index, element) {
 				                	$.each(element, function(k, v) {
 				                		var dev_name = "<h4>"+k+"'s events</h4>"
@@ -156,7 +154,6 @@
 				            dataType: 'json',
 				            success: function(response) {
 				            	$('.events').empty();
-				            	//$('#table-events').css('display', 'none');
 				                $.each(response, function(index, element) {
 				                	$.each(element, function(k, v) {
 				                		var date = k;
@@ -408,7 +405,7 @@
 			</div>
 
 			<div class="col-md-10 main">
-			    <p id="release-note">Source code will be released on June 17th, 2015</p>
+			    <p id="release-note">Source code available at: <a href="https://github.com/coopera/UEDashboard">https://github.com/coopera/UEDashboard</a></p>
 				<h3><span class="fa fa-bar-chart-o"></span>&nbsp;Dashboard</h3>
 
 				<div class="panel panel-default">
